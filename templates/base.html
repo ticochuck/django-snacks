@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,19 +8,17 @@
     {% block title %}
         <title>Django Snacks Home</title>
     {% endblock title %}
-    
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-    <header>
-        <ul>
-            <li><a href= "{% url 'home' %}">Home</a></li>
-            <li><a href= "{% url 'about' %}">About</a></li>
-        </ul>
-    </header>
+    {% include 'partials/_navbar.html' %}
+    
     <main>
         {% block content %}
             <h1>placeholder for h1</h1>
         {% endblock content %}
     </main>
+
+    {% include 'partials/_footer.html' %}
 </body>
 </html>
