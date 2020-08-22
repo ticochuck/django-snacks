@@ -1,6 +1,6 @@
-# Math_Series
+# Django Snacks
 
-[Link to Latest PR]()
+[Link to Latest PR](https://github.com/ticochuck/django-snacks/pull/1)
 
 ## Description
 Create web site in Django with 2 pages
